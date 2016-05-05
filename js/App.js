@@ -1,5 +1,5 @@
 import React from 'react';
-import EditorPlayer from 'EditorPlayer';
+import EditorPlayer from './EditorPlayer';
 
 const defaultValue = `import React, { AppRegistry, View, Text } from 'react-native'
 const style = {

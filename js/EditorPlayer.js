@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PlayerFrame from './PlayerFrame'
-import { options, requireAddons } from 'CodeMirror'
+import PlayerFrame from './PlayerFrame';
+import { options, requireAddons } from './CodeMirror';
 
 const Babel = require('babel-standalone')
 
