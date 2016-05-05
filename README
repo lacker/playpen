@@ -1,0 +1,3 @@
+npm install
+npm run dev-server
+go to localhost:8080
