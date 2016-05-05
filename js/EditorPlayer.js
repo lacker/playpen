@@ -96,6 +96,7 @@ export default class EditorPlayer extends Component {
     const compiled = this.compile(code)
 
     if (compiled) {
+      console.log('XXX Editor saved', compiled.length, 'bytes of code');
       this.refs.player.runApplication(compiled)
     }
   }

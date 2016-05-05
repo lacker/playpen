@@ -10,7 +10,7 @@ const Root = () => {
 }
 
 // App registration and rendering
-AppRegistry.registerComponent('MyRoot', () => Root)`;
+AppRegistry.registerComponent('MyApp', () => Root)`;
 
 export default class App extends Component {
   render() {

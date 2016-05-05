@@ -33,9 +33,10 @@ export default class extends Component {
 
       const {id, type} = data
 
-      if (id !== this.state.id) {
-        return
-      }
+      // No ids at the moment so remove this
+      //if (id !== this.state.id) {
+      //  return
+      //}
 
       switch (type) {
         case 'ready':

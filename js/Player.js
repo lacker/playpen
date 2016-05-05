@@ -36,6 +36,8 @@ export default class Player extends Component {
   }
 
   runApplication(code) {
+    console.log('XXX Player running', code.length, 'bytes of code');
+
     const {AppRegistry} = require('react-native-web')
 
     const screenElement = this.refs.phone.getScreenNode()
@@ -47,11 +49,12 @@ export default class Player extends Component {
     try {
       this.evaluate(code)
 
+      // This assumes the name is MyApp. TODO: don't require that
       AppRegistry.runApplication('MyApp', {
         rootTag: screenElement,
       })
     } catch (e) {
-      // console.log('Failed to run MyApp', e)
+      console.log('Failed to run MyApp', e)
       this.props.onError(e)
     }
   }
