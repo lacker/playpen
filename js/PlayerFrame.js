@@ -72,7 +72,7 @@ export default class extends Component {
         frameBorder={0}
         width={width}
         height={height}
-        src={`sandbox/${id}`}
+        src={`/sandbox.html`}
       />
     )
   }

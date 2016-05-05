@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './js/App';
+import {
+  IndexRoute,
+  Link,
+  Route,
+  Router,
+  browserHistory,
+} from 'react-router';
 
-// Don't edit Root directly, unless you are setting up global configuration.
-// For app logic, see App in containers/App.js instead.
-const Root = () => (
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+import App from './js/App';
+import Sandbox from './js/Sandbox';
+
+function Hello() {
+  return <div>Hello there</div>;
+}
+
+function Root() {
+  return (
+    <Router history={browserHistory}>
+      <Route path='/'>
+        <IndexRoute component={App} />
+        <Route path='sandbox*' component={Sandbox} />
+      </Route>
+    </Router>
+  );
+}
 
 ReactDOM.render(<Root />, document.getElementById('root'));

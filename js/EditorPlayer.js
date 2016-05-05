@@ -62,7 +62,7 @@ const errorContainerStyle = {
   zIndex: 1,
 }
 
-export default class EditorTranspiler extends Component {
+export default class EditorPlayer extends Component {
   constructor() {
     super()
     this.state = {}
